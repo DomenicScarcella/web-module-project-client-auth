@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
@@ -20,7 +20,6 @@ const FriendsList = () => {
         <div>
             <h1>Friends List</h1>
             {
-                
                 friends.map(friend => {
                     return (
                     <div className='friendCard'>
