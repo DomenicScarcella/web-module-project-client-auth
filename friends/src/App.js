@@ -9,10 +9,6 @@ import { axiosWithAuth } from './utils/axiosWithAuth';
 
 function App() {
   const logout = () => {
-    //1. do a request to our server to delete the token
-    //2. remove our local token
-    //3. redirect to login page
-
     axiosWithAuth()
       .post('/api/logout')
       .then(res => {
@@ -36,11 +32,11 @@ function App() {
              <Link onClick={logout}>Logout</Link>
           </li>
           <li>
-            {localStorage.getItem('token') && <Link to="/protected">Protected Page</Link>}
+            {localStorage.getItem('token') && <Link to="/protected">Friends</Link>}
           </li>
         </ul>
         <Switch>
-          <PrivateRoute exact path="/protected" component={FriendsList} />
+          <PrivateRoute exact path="/friends" component={FriendsList} />
           <Route path="/login" component={Login} />
           <Route component={Login} />
         </Switch>
