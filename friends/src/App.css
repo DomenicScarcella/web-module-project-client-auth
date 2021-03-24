@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.friendCard {
+  width: 50vw;
+  min-width: 320px;
+  border: 2px solid blue;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}

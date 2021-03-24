@@ -7,6 +7,8 @@ import PrivateRoute from './components/PrivateRoute';
 
 import { axiosWithAuth } from './utils/axiosWithAuth';
 
+import './App.css';
+
 function App() {
   const logout = () => {
     axiosWithAuth()
@@ -32,7 +34,7 @@ function App() {
              <Link onClick={logout}>Logout</Link>
           </li>
           <li>
-            {localStorage.getItem('token') && <Link to="/protected">Friends</Link>}
+            {localStorage.getItem('token') && <Link to="/friends">Friends</Link>}
           </li>
         </ul>
         <Switch>

@@ -20,10 +20,14 @@ const FriendsList = () => {
         <div>
             <h1>Friends List</h1>
             {
+                
                 friends.map(friend => {
-                    <h3>{friend.name}</h3>
-                    <p><strong>Age:&nbsp;</strong>{friend.age}<br />
-                    {friend.email}<br /><br /></p>
+                    return (
+                    <div className='friendCard'>
+                        <h3>{friend.name}</h3>
+                        <p><strong>Age:&nbsp;</strong>{friend.age}<br />
+                        {friend.email}<br /><br /></p>
+                    </div>);
                 })
             }
         </div>
