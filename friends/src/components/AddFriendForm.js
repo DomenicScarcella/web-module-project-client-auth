@@ -1,6 +1,6 @@
-import axiosWithAuth from '../utils/AxiosWithAuth';
 import React from 'react';
 import { useHistory } from 'react-router';
+import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 const initialValues = {
     name: '',
