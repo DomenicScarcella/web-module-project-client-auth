@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.friendCard {
+  width: 50vw;
+  min-width: 256px;
+  max-width: 320px;
+  border: 2px solid blue;
+  border-radius: 33%;
+  padding: 1rem 0;
+  margin: 1rem auto;
+}
